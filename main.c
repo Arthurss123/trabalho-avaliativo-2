@@ -34,8 +34,7 @@ int main() {
             break;
         }
     }
-
-
+    
     //caso não for encontrado roda esse bloco de codigo
     if (!encontrado) {
         printf("Nao foi possivel encontrar uma decomposicao em dois numeros primos.\n");
