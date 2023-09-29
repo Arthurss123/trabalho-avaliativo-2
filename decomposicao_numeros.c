@@ -17,7 +17,7 @@ int main() {
     int num, encontrado = 0;
 
     // Pede para que digite um numero maior que 2 
-    printf("Digite um numero maior que 2");
+    printf("Digite um numero maior que 2:");
     scanf("%d", &num);
 
     // verifica se é um numero maior que 2 
@@ -27,7 +27,7 @@ int main() {
     }
 
     // Faz a decomposição do numero
-    for (int i = 2; i <= num / 2; i++) {
+    for (int i = 2; i <= num / 2; i++)/*Loop que começa com i igual a 2 e continua até "i" ser menor ou igual a metade da variavel "num" */{
         if (Primo(i) && Primo(num - i)) {
             printf("%d + %d = %d\n", i, num - i, num);
             encontrado = 1;
