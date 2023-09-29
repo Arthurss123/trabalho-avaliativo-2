@@ -14,7 +14,7 @@ int numPrimo(int numTeste) {
 }
 
 int main() {
-    int num, encontrado = 0;
+    int num, combiValida = 0;
 
     // Pede para que digite um numero maior que 2 
     printf("Digite um numero maior que 2:");
@@ -30,7 +30,7 @@ int main() {
     for (int i = 2; i <= num / 2; i++)/*Loop que começa com i igual a 2 e continua até "i" ser menor ou igual a metade da variavel "num" */{
         if (Primo(i) && Primo(num - i)) {
             printf("%d + %d = %d\n", i, num - i, num);
-            encontrado = 1;
+            combiValida = 1; // quando se encontra uma combinação valida de numeros primos
             break;
         }
     }
